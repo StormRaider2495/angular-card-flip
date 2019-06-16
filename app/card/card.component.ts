@@ -14,8 +14,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('inactive', style({
         transform: 'rotateY(0)'
       })),
-      transition('active => inactive', animate('500ms ease-out')),
-      transition('inactive => active', animate('500ms ease-in'))
+      transition('active => inactive', animate('1000ms ease-out')),
+      transition('inactive => active', animate('1000ms ease-in'))
     ])
   ]
 })
@@ -26,7 +26,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
-  flip: string = 'inactive';
+  flip: string;
 
   toggleFlip() {
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
