@@ -2,6 +2,7 @@
     .tp-wrapper {
       -webkit-perspective: 800px;
               perspective: 800px;
+      background: #23262d;
     }
     
     .tp-box {
@@ -41,7 +42,8 @@
       transform         : rotateY(0deg);
     }
     .tp-box__back {
-      background: #23262d;
+      /* background: #23262d; */
+      background: #b222b2;
       -webkit-transform : rotateY(-180deg);
       -ms-transform     : rotateY(-180deg);
       transform         : rotateY(-180deg);
